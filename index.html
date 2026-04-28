@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALDREI LOUIS DM. RAMOS  Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">ALDREI LOUIS RAMOS</h2>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>                   
+        </button>
+        <ul class="nav-links" role="menubar" id="navLinks">
+            <li role="none"><a href="#" role="menuitem" onclick="showSection('home'); closeMenu()" aria-current="page">Home</a></li>
+            <li role="none"><a href="#" role="menuitem" onclick="showSection('about'); closeMenu()">About</a></li>
+            <li role="none"><a href="#" role="menuitem" onclick="showSection('projects'); closeMenu()">Projects</a></li>
+            <li role="none"><a href="#" role="menuitem" onclick="showSection('contact'); closeMenu()">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="section active">
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="name-badge">
+                        <h1>ALDREI LOUIS <span>DM. RAMOS</span></h1>
+                        <div class="role-badge">Cybersecurity Enthusiast</div>
+                    </div>
+                    <h2 class="typing">Soon to be Cybersecurity Professional</h2>
+                    <div class="bio-container">
+                        <p class="bio">
+                           As an IT student, I am building a solid foundation in networking, system security, and basic programming.
+                           I am particularly interested in areas such as ethical hacking, threat analysis, and vulnerability assessment. 
+                           I enjoy learning how real-world security breaches happen and how professionals defend against them.
+                        </p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#" onclick="showSection('about')" class="btn primary">About Me</a>
+                        <a href="#" onclick="showSection('projects')" class="btn secondary">My Work</a>
+                        <a href="#contact" onclick="showSection('contact')" class="btn tertiary">Contact</a>
+                        <a href="cv.pdf" download class="btn download">Download CV</a>
+                    </div>
+                </div>
+            </div>
+    <div class="hero-img">
+                <img src="profile.png" alt="Aldrei Louis DM. Ramos, IT student and cybersecurity enthusiast profile picture" loading="lazy">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <a href="#content" class="skip-link">Skip to main content</a>
+        <div class="content" id="content">
+            <h1>About Me</h1>
+
+            <div class="card">
+                <h2>Background</h2>
+                <p>
+                    I am an Information Technology student with a strong interest in building modern, functional, 
+                    and user-focused digital solutions. I enjoy turning ideas into interactive systems through clean 
+                    code, logical problem-solving, and creative design. My focus is on web development and interface 
+                    design, where I combine technical skills with attention to user experience. I have experience 
+                    working with front-end technologies such as HTML, CSS, and JavaScript, and I am continuously 
+                    expanding my knowledge in backend development and database systems. I am passionate about learning 
+                    new technologies, improving my coding practices, and developing projects that are both efficient 
+                    and meaningful. As an IT student, I aim to grow into a well-rounded developer capable of contributing 
+                    to real-world systems and innovative digital solutions.
+            </div>
+
+            <div class="card">
+                <h2>Education</h2>
+                <p><strong>(2024-2025)</strong><br>Alejandro E. Judan National High school<br>Humanities and Social Sciences</p>
+                <p><strong>(2025-Present)</strong><br>PHINMA ARAULLO UNIVERSITY<br>Bachelor of Science in<br>Information Technology</p>
+            </div>
+
+            <h2>Skills</h2>
+            <div class="skills-grid">
+            <div class="skill" data-width="75">
+                    <p>HTML <span>75%</span></p>
+                    <div class="bar"><div class="fill"></div></div>
+                </div>
+            <div class="skill" data-width="69">
+                    <p>CSS <span>69%</span></p>
+                    <div class="bar"><div class="fill"></div></div>
+                </div>
+            <div class="skill" data-width="56">
+                    <p>JavaScript <span>56%</span></p>
+                    <div class="bar"><div class="fill"></div></div>
+                </div>
+            <div class="skill" data-width="93">
+                    <p>Problem Solving <span>93%</span></p>
+                    <div class="bar"><div class="fill"></div></div>
+                </div>
+
+            <div class="skill" data-width="75">
+                    <p>UI/UX Design <span>75%</span></p>
+                    <div class="bar"><div class="fill"></div></div>
+                </div>
+            
+
+            <div class="skill" data-width="78">
+                    <p>Python <span>78%</span></p>
+                    <div class="bar"><div class="fill"></div></div>
+                </div>
+
+            <div class="skill" data-width="83">
+                    <p>Java <span>83%</span></p>
+                    <div class="bar"><div class="fill"></div></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Interests</h2>
+                <p>As an IT student, I am interested in exploring how technology shapes modern life and how 
+                    it can be used to create practical and innovative solutions. I enjoy web development, 
+                    especially designing clean and responsive user interfaces that improve user experience.
+                </p>
+
+                <p>I also have a strong interest in learning new programming languages, experimenting with 
+                    modern frameworks, and understanding how systems work behind the scenes. Problem-solving 
+                    and logical thinking through coding challenges are activities I find both engaging and rewarding.
+                </p>
+            </div>
+
+            <div class="card resume-card">
+                <h2>Resume</h2>
+                <p>Want a quick overview of my background, skills, and experience? Download my CV below.</p>
+                <a href="cv.pdf" download class="btn download">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="content">
+            <h1>My Projects</h1>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Art Exhibit Website</h3>
+                    <p>
+                        A visually engaging website designed to showcase various artworks in a structured and 
+                        interactive online gallery. It highlights artist information, artwork details, and 
+                        exhibition themes while on aesthetics, layout design, and user experience. The project 
+                        demonstrates skills in front-end development, UI design, and creative presentation of content.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML/CSS</span>
+                        <span>UI Design</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Attendance Tracer</h3>
+                    <p>
+                        A simple yet functional system designed to record and manage student attendance efficiently. 
+                        It allows users to track daily attendance, view records, and ensure organized data management.
+                        This project focuses on basic database handling, logical structuring, and improving productivity
+                        through digital automation.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Database</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                     A personal website that serves as a digital profile showcasing skills, projects, and background 
+                     information. It is designed to highlight professional identity through modern UI design, responsive
+                     layout, and organized content sections. This project reflects creativity, web development skills, 
+                     and personal branding as an IT student.
+                     </p>
+                    <div class="project-tags">
+                        <span>Modern Web</span>
+                        <span>Cybersecurity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <h1>Contact Me</h1>
+            
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to discuss cybersecurity, web development, or collaboration opportunities?</p>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <p><strong>Email</strong><br><a href="mailto:ramosaldreilouis@gmail.com">ramosaldreilouis@gmail.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <p><strong>Phone</strong><br><a href="tel:+639271149788">0927 114 9788</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">💻</div>
+                            <p><strong>GitHub</strong><br><a href="https://github.com/ramosaldreilouis-create" target="_blank">View Profile</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📘</div>
+                            <p><strong>Facebook</strong><br><a href="https://www.facebook.com/aldreilouis.ramos" target="_blank">View Profile</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Send Message</h2>
+                    <form class="message-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message..." rows="5" required></textarea>
+                        <button type="submit" class="btn primary full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+let i = 0;
+const typingText = "Soon to be Cybersecurity";
+function typeWriter() {
+  if (i < typingText.length) {
+    document.querySelector('.typing').textContent = typingText.substring(0, i + 1);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+
+window.addEventListener('load', () => {
+  typeWriter();
+  animateBars();
+  
+  updateActiveNav('home');
+});
+
+function toggleMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.getElementById('navLinks');
+  const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+  
+  hamburger.setAttribute('aria-expanded', !expanded);
+  navLinks.classList.toggle('active');
+}
+
+function closeMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.setAttribute('aria-expanded', 'false');
+  navLinks.classList.remove('active');
+}
+
+function updateActiveNav(sectionId) {
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.removeAttribute('aria-current');
+  });
+  document.querySelector(`[onclick="showSection('${sectionId}')"]`).setAttribute('aria-current', 'page');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('.message-form');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const name = formData.get('name') || 'Anonymous';
+    alert(`Thank you, ${name}! Message sent successfully. I'll get back to you soon at ramosaldreilouis@gmail.com.`);
+    form.reset();
+  });
+});
+
+function showSection(sectionId) {
+  document.querySelectorAll('.section').forEach(section => {
+    section.classList.remove('active');
+  });
+
+  document.getElementById(sectionId).classList.add('active');
+
+  updateActiveNav(sectionId);
+  closeMenu();
+  animateBars();
+
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function animateBars() {
+  const observerOptions = {
+    threshold: 0.5,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const skill = entry.target;
+        const fill = skill.querySelector('.fill');
+        const width = skill.dataset.width;
+        if (width && fill) {
+          fill.style.width = width + '%';
+        }
+        observer.unobserve(skill);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.skill').forEach(skill => {
+    if (skill.dataset.width) observer.observe(skill);
+  });
+}
+</script>
+
+</body>
+</html>
+
